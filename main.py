@@ -41,7 +41,7 @@ def get_dataset(name):
         data = datasets.load_breast_cancer()
     else:
         print("kl")
-        data = "/workspaces/160398179/Nustai/streamlit/multiple_classifier/penguins_cleaned.csv"
+        data = "/penguins_cleaned.csv"
         df = pd.read_csv(data)
         df["sex"] = df["sex"].map({'male': 0, 'female': 1})
         df["species"] = df["species"].map({'Adelie': 0, 'Gentoo': 1,'Chinstrap': 2})
